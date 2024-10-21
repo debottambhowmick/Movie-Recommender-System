@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+      <!-- --------------------- -->
+        <!-- About -->
+        <section class="text-gray-600 body-font">
+          <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
+              <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="../static/debottam_bhowmick.png">
+              <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+                  <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Debottam Bhowmick</h1>
+                  <p class="mb-8 leading-relaxed">
+                      I am a software developer from Kolkata, West Bengal, India, specializing in Python full-stack development. With a passion for technology, I have gained skills in data science and machine learning, enabling me to build intelligent applications and solve real-world problems.
+                  </p>
+                  <p class="text-sm mt-2 text-gray-500 mb-8 w-full">Connect with me below for more details.</p>
+                  <div class="flex">
+                      <a href="https://www.linkedin.com/in/debottambhowmick/" target="_blank" class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="#32CD32" class="w-6 h-6" viewBox="0 0 24 24">
+                              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                              <circle cx="4" cy="4" r="2"></circle>
+                          </svg>
+                          <span class="ml-4 flex items-start flex-col leading-none">
+                              <span class="text-xs text-gray-600 mb-1">Connect on</span>
+                              <span class="title-font font-medium">LinkedIn</span>
+                          </span>
+                      </a>
+                      <a href="mailto:debottambhowmick@gmail.com" class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center ml-4 hover:bg-gray-200 focus:outline-none">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="#32CD32" class="w-6 h-6" viewBox="0 0 24 24">
+                              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 1.99 2H20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+                          </svg>
+                          <span class="ml-4 flex items-start flex-col leading-none">
+                              <span class="text-xs text-gray-600 mb-1">Email me at</span>
+                              <span class="title-font font-medium">Gmail</span>
+                          </span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      
+{% endblock %}

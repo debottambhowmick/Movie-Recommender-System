@@ -1,0 +1,5 @@
+# Ignore the config.json file
+config.json
+
+# Ignore the entire movie_recommender directory
+movie_recommender/
