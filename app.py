@@ -9,13 +9,13 @@ import gzip
 
 
 
-def get_config():
-    with open("config.json") as config_file:
-        config = json.load(config_file)
-    return config
+# main.py
+import os
+from dotenv import load_dotenv
 
-config = get_config()
-api_key = config['api_key']
+load_dotenv()  # Load environment variables from .env file
+api_key = os.getenv("TMDB_API_KEY")
+
 
 
 
