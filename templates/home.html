@@ -1,0 +1,168 @@
+{% extends "layout.html" %}
+
+{% block content %}
+      <!-- Hero section -->
+<section class="text-gray-600 body-font -my-8">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 text-left">
+            <span class="font-bold">Movie Recommender System</span>
+            <br class="hidden lg:inline-block">
+            Content-based recommender
+        </h1>
+        <p class="mb-8 leading-relaxed text-left">Discover personalized movie recommendations tailored to your taste! Our system analyzes your preferences and suggests movies that you'll love.</p>
+        <div class="flex justify-center">
+          <a href="/recommender"><button  class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Get Started</button></a>
+          <a href="/contact"><button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Contact</button></a>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" src="../static/home.jpg">
+      </div>
+    </div>
+  </section>
+  <!-- ---------------- -->
+  
+<!-- Core Features -->
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+            <img alt="feature" class="object-cover object-center h-full w-full" src="../static/feature.jpg">
+        </div>
+        <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-left">
+            <div class="flex flex-col mb-10 lg:items-start items-start">
+                <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-500 text-white mb-5">
+                    <img src="../static/recommend.svg" alt="Personalized Recommendations Icon" class="w-6 h-6">
+                </div>
+                <div class="flex-grow">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Personalized Recommendations</h2>
+                    <p class="leading-relaxed text-base">Receive curated movie suggestions tailored to your unique taste. Our system analyzes your viewing history and preferences, ensuring that you discover films you'll love.</p>
+                    <a class="mt-3 text-green-500 inline-flex items-center" href="#" target="_blank">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col mb-10 lg:items-start items-start">
+                <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-500 text-white mb-5">
+                    <img src="../static/user_raing.svg" alt="User Ratings Icon" class="w-6 h-6">
+                </div>
+                <div class="flex-grow">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">User Ratings and Reviews</h2>
+                    <p class="leading-relaxed text-base">Explore honest ratings and reviews from fellow movie enthusiasts. This feature helps you gauge the quality of a film before you hit play, ensuring you make informed choices.</p>
+                    <a class="mt-3 text-green-500 inline-flex items-center" href="#" target="_blank">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col mb-10 lg:items-start items-start">
+                <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-500 text-white mb-5">
+                    <img src="../static/genres.svg" alt="Explore New Genres Icon" class="w-6 h-6">
+                </div>
+                <div class="flex-grow">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Explore New Genres</h2>
+                    <p class="leading-relaxed text-base">Delve into a wide array of genres and discover hidden gems that suit your mood. Whether you’re in the mood for drama, comedy, or sci-fi, our system helps you find the perfect match.</p>
+                    <a class="mt-3 text-green-500 inline-flex items-center" href="#" target="_blank">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Additional Benefits -->
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Additional Benefits</h1>
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+            <div class="p-4 md:w-1/3 flex">
+                <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-500 text-white mb-4 flex-shrink-0">
+                    <img src="../static/trending.svg" alt="Trending Movies Icon" class="w-6 h-6">
+                </div>
+                <div class="flex-grow pl-6">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Trending Movies</h2>
+                    <p class="leading-relaxed text-base">Stay updated with the latest trending movies that are taking the world by storm.</p>
+                    <a class="mt-3 text-green-500 inline-flex items-center">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="p-4 md:w-1/3 flex">
+                <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-500 text-white mb-4 flex-shrink-0">
+                    <img src="../static/watchlist.svg" alt="Watchlist Management Icon" class="w-6 h-6">
+                </div>
+                <div class="flex-grow pl-6">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Watchlist Management</h2>
+                    <p class="leading-relaxed text-base">Easily manage your watchlist, adding and removing titles as you discover new movies.</p>
+                    <a class="mt-3 text-green-500 inline-flex items-center">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="p-4 md:w-1/3 flex">
+                <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-green-500 text-white mb-4 flex-shrink-0">
+                    <img src="../static/news.svg" alt="Daily Movie News Icon" class="w-6 h-6">
+                </div>
+                <div class="flex-grow pl-6">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Daily Movie News</h2>
+                    <p class="leading-relaxed text-base">Get the latest news about your favorite movies, including trailers, announcements, and behind-the-scenes updates.</p>
+                    <a class="mt-3 text-green-500 inline-flex items-center">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- -------------- -->
+  
+  <!-- Gallery Section -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex w-full mb-20 flex-wrap">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Discover Your Next Favorite Movie</h1>
+        <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Explore a curated selection of films tailored to your unique tastes. Whether you’re into thrilling adventures or heartwarming dramas, our recommender system has something for everyone.</p>
+      </div>
+      <div class="flex flex-wrap md:-m-2 -m-1">
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="../static/Guardians-of-the-Galaxy.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="../static/inception.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-full">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="../static/star-wars-2.jpg">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-full">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="../static/jurassicpark.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="../static/terminator.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="../static/nun.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- -------------- -->
+  
+ {% endblock %}
