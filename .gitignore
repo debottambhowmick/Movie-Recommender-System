@@ -3,3 +3,8 @@ config.json
 
 # Ignore the entire movie_recommender directory
 movie_recommender/
+
+#Environment Variable
+.env
+
+.vscode

@@ -6,9 +6,6 @@ import requests
 import json
 import gzip
 
-
-
-
 # main.py
 import os
 from dotenv import load_dotenv
